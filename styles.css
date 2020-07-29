@@ -1,0 +1,131 @@
+﻿/* 
+   Hotel Natoma style sheet 
+   Filename: styles.css
+
+   Author:   
+   Date:     
+   HTML5 and CSS3 Illustrated Unit F, Independent Challenge 3
+ */
+
+/* reset styles */
+html {
+   font-size: 14px;
+}
+article, aside, body, div, footer, header, h1, h2, nav, p {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+/* body and page container */
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+   max-width: 800px;
+   margin: 0 auto;
+   border-left: 3px solid black;
+   border-right: 3px solid black;
+   background-color: #93ad78;
+   position: relative;
+}
+p {
+   font-size: 1.4em;
+}
+.sitenavigation{
+   font-size: 0.5em;
+   color: white;
+   font-size: 20px;
+   text-decoration: none;
+   float: left;
+   padding: 2%;
+   width: 20%;
+
+}
+a{
+   color:white;
+}
+a:hover {
+   color: black;
+}
+
+li{
+   color:white;
+}
+p.skipnavigation{
+position: absolute;
+left: -10000px;
+} 
+/* header section */
+header {
+   border-top: 3px solid black;
+   border-bottom: 3px solid black;
+   padding: 10px;
+   text-align: center;
+   color: white;
+   background-color: #082008;
+}
+h1 {
+   font-size: 2.4em;
+   line-height: 1.6em;
+   font-family: "Krona One", Arial, Helvetica, sans-serif;
+   font-weight: 400;
+}
+
+/* main content */
+article {
+   width: 72%;
+   margin: 0 auto;
+   padding: 2%;
+   float: right;
+   background-color: linen;
+}
+article h2 {
+   margin-bottom: 0.6em;
+   font-family: "Krona One", Arial, Helvetica, sans-serif;
+   font-size: 1.6em;
+   line-height: 2em;
+   font-weight: 400;
+}
+article p {
+   margin-left: 2em;
+}
+article p.pullquote {
+   margin: 1em 1em 0.4em;
+   font-size: 2.1em;
+   line-height: 1.4em;
+}
+
+/* footer section */
+footer {
+   border-top: 3px solid black;
+   border-bottom: 3px solid black;
+   padding: 10px;
+   text-align: center;
+   color: white;
+   clear: both;
+   background-color: #082008;
+}
+
+/* print styles */
+@media print {
+   article, aside, body, .container, footer, header {
+      border: 0;
+      color: rgb(0,0,0);
+      background-color: rgb(255,255,255);
+   }
+   .sitenavigation{
+      display: none;
+   }
+   #contentstart{
+         float: left;
+         align-content: left;
+      
+   }
+   body {
+      max-width: 100%;
+   }
+}
+@page {
+   margin: 0.75in;
+}
